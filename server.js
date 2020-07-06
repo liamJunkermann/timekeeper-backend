@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 const punchRoute = require('./routes/punchRoute');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 const dburl = `mongodb+srv://dbUser:${process.env.dbpassword}@timekeeper.iu6sg.mongodb.net/${process.env.dbname}?retryWrites=true&w=majority`;
 // console.log(url);
 mongoose.connect(dburl, {
